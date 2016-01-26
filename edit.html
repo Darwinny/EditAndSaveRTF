@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>A Simple Page with CKEditor</title>
+        <!-- Make sure the path to CKEditor is correct. -->
+        <script src="../ckeditor/ckeditor.js"></script>
+		<style>
+            #cke_1_contents {
+                min-height:calc(100% - 180px); /* Force a bigger height */
+            }
+			#saveButton {
+				display:block;
+				width:200px;
+				margin:10px auto;
+				background: #3498db;
+				background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+				background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+				background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+				background-image: -o-linear-gradient(top, #3498db, #2980b9);
+				background-image: linear-gradient(to bottom, #3498db, #2980b9);
+				-webkit-border-radius: 28px;
+				-moz-border-radius: 28px;
+				border-radius: 28px;
+				font-family: Arial;
+				color: #ffffff;
+				font-size: 20px;
+				padding: 10px 20px 10px 20px;
+				text-decoration: none;
+			}
+
+			#saveButton:hover {
+				background: #3cb0fd;
+				background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+				background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+				background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+				background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+				background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+				text-decoration: none;
+				cursor:pointer;
+			}
+			#saveButton.armed {
+				background: #d93463;
+				background-image: -webkit-linear-gradient(top, #d93463, #b82b2b);
+				background-image: -moz-linear-gradient(top, #d93463, #b82b2b);
+				background-image: -ms-linear-gradient(top, #d93463, #b82b2b);
+				background-image: -o-linear-gradient(top, #d93463, #b82b2b);
+				background-image: linear-gradient(to bottom, #d93463, #b82b2b);
+			}
+
+			#saveButton.armed:hover {
+				background: #fc3cb9;
+				background-image: -webkit-linear-gradient(top, #fc3cb9, #d93484);
+				background-image: -moz-linear-gradient(top, #fc3cb9, #d93484);
+				background-image: -ms-linear-gradient(top, #fc3cb9, #d93484);
+				background-image: -o-linear-gradient(top, #fc3cb9, #d93484);
+				background-image: linear-gradient(to bottom, #fc3cb9, #d93484);
+			}
+			#saveButton.saving {
+				background: #34d93f;
+				background-image: -webkit-linear-gradient(top, #34d93f, #2bb82b);
+				background-image: -moz-linear-gradient(top, #34d93f, #2bb82b);
+				background-image: -ms-linear-gradient(top, #34d93f, #2bb82b);
+				background-image: -o-linear-gradient(top, #34d93f, #2bb82b);
+				background-image: linear-gradient(to bottom, #34d93f, #2bb82b);
+
+			}
+
+			#saveButton.saving:hover {
+				background: #3cfc6f;
+				background-image: -webkit-linear-gradient(top, #3cfc6f, #34d94d);
+				background-image: -moz-linear-gradient(top, #3cfc6f, #34d94d);
+				background-image: -ms-linear-gradient(top, #3cfc6f, #34d94d);
+				background-image: -o-linear-gradient(top, #3cfc6f, #34d94d);
+				background-image: linear-gradient(to bottom, #3cfc6f, #34d94d);
+				cursor:default;
+			}
+		</style>
+    </head>
+    <body>
+        <form>
+            <textarea name="editor1" id="editor1" rows="10" cols="80">
+                This is my textarea to be replaced with CKEditor.
+            </textarea>
+			<input type="submit" id="saveButton" value="Save file" status="default" />
+        </form>
+    </body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/save.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
